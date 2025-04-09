@@ -37,12 +37,12 @@ It features a two-tier Application Load Balancer (ALB → ALB) setup with proxy 
 
 ## 🚀 How to Use
 
- 1. Clone this repository:
+1. Clone this repository:
 
    git clone https://github.com/khkhkhkhader/terraform-web-infra-on-aws.git
    cd terraform-web-infra-on-aws
 
- 2. Initialize Terraform
+2. Initialize Terraform
     terraform init
 
    This command will:
@@ -51,15 +51,15 @@ It features a two-tier Application Load Balancer (ALB → ALB) setup with proxy 
   - Prepare your environment for planning and deployment
     
 
- 3. Set your variables in terraform.tfvars
+3. Set your variables in terraform.tfvars
   (Edit file and provide values like region, key name, etc.)
 
- 4. Deploy the infrastructure
+4. Deploy the infrastructure
   terraform apply
 
   Approve when prompted (type 'yes')
 
- 5. After successful apply, a file will be created:
+5. After successful apply, a file will be created:
     
     → all-ips.txt
     
