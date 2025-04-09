@@ -55,12 +55,10 @@ terraform init
  (Edit file and provide values like region, key name, etc.)
 
  4. Deploy the infrastructure
-terraform apply
+ terraform apply
 
  Approve when prompted (type 'yes')
 
  5. After successful apply, a file will be created:
  → all-ips.txt
- It will contain public IPs of proxy EC2 instances like:
- public-ip0 44.200.xx.xx
- public-ip1 54.211.xx.xx
+ It will contain public IPs of proxy EC2 instances for any later configration usage 
