@@ -39,26 +39,27 @@ It features a two-tier Application Load Balancer (ALB → ALB) setup with proxy 
 
  1. Clone this repository:
 
-git clone https://github.com/khkhkhkhader/terraform-web-infra-on-aws.git
-cd terraform-web-infra-on-aws
+   git clone https://github.com/khkhkhkhader/terraform-web-infra-on-aws.git
+   cd terraform-web-infra-on-aws
 
  2. Initialize Terraform
-terraform init
+    terraform init
 
- This command will:
- - Download required providers (AWS, TLS, etc.)
- - Create `.terraform.lock.hcl` to lock provider versions
- - Prepare your environment for planning and deployment
- 🔸 Note: The lock file ensures consistency, but it doesn't replace `terraform init`.
+   This command will:
+  - Download required providers (AWS, TLS, etc.)
+  - Create `.terraform.lock.hcl` to lock provider versions
+  - Prepare your environment for planning and deployment
+  🔸 Note: The lock file ensures consistency, but it doesn't replace `terraform init`.
 
  3. Set your variables in terraform.tfvars
- (Edit file and provide values like region, key name, etc.)
+  (Edit file and provide values like region, key name, etc.)
 
  4. Deploy the infrastructure
- terraform apply
+  terraform apply
 
- Approve when prompted (type 'yes')
+  Approve when prompted (type 'yes')
 
  5. After successful apply, a file will be created:
- → all-ips.txt
- It will contain public IPs of proxy EC2 instances for any later configration usage 
+    → all-ips.txt  
+    It will contain public IPs of proxy EC2 instances for any later configuration usage
+
