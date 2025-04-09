@@ -57,7 +57,7 @@ It features a two-tier Application Load Balancer (ALB → ALB) setup with proxy 
 4. Deploy the infrastructure
   terraform apply
 
-  Approve when prompted (type 'yes')
+    Approve when prompted (type 'yes')
 
 5. After successful apply, a file will be created:
     
