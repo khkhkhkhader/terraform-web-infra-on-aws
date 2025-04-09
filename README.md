@@ -49,7 +49,7 @@ It features a two-tier Application Load Balancer (ALB → ALB) setup with proxy 
   - Download required providers (AWS, TLS, etc.)
   - Create `.terraform.lock.hcl` to lock provider versions
   - Prepare your environment for planning and deployment
-  🔸 Note: The lock file ensures consistency, but it doesn't replace `terraform init`.
+    
 
  3. Set your variables in terraform.tfvars
   (Edit file and provide values like region, key name, etc.)
@@ -60,6 +60,8 @@ It features a two-tier Application Load Balancer (ALB → ALB) setup with proxy 
   Approve when prompted (type 'yes')
 
  5. After successful apply, a file will be created:
-    → all-ips.txt  
+    
+    → all-ips.txt
+    
     It will contain public IPs of proxy EC2 instances for any later configuration usage
 
